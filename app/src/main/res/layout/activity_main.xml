@@ -6,31 +6,65 @@
     android:layout_height="match_parent"
     tools:context="edu.sdmesa.mesacollege.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/textViewMesa"
-        android:textSize="36sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.137" />
+    <RelativeLayout
+        android:layout_width="370dp"
+        android:layout_height="500dp"
+        tools:layout_editor_absoluteY="5dp"
+        tools:layout_editor_absoluteX="7dp"
+        tools:ignore="MissingConstraints">
 
-    <Button
-        android:id="@+id/buttonWebsite"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/textViewButton"
-        tools:layout_editor_absoluteX="52dp"
-        tools:layout_editor_absoluteY="287dp" />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="370dp"
+            android:layout_height="500dp"
+            android:rotation="90"
+            app:srcCompat="@drawable/mesaphoto" />
 
-    <Button
-        android:id="@+id/buttonCall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/textViewCall"
-        tools:layout_editor_absoluteX="212dp"
-        tools:layout_editor_absoluteY="287dp" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="102dp"
+            android:text="@string/textViewMesa"
+            android:textColor="@android:color/background_dark"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.137" />
+
+        <Button
+            android:id="@+id/buttonWebsite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/buttonCall"
+            android:layout_marginLeft="51dp"
+            android:layout_marginStart="51dp"
+            android:text="@string/textViewButton"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="116dp"
+            tools:layout_editor_absoluteY="280dp" />
+
+        <Button
+            android:id="@+id/buttonCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textViewCall"
+            tools:ignore="MissingConstraints,RelativeOverlap"
+            tools:layout_editor_absoluteX="212dp"
+            tools:layout_editor_absoluteY="287dp"
+            android:layout_marginBottom="138dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="60dp"
+            android:layout_marginEnd="60dp" />
+
+    </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>
