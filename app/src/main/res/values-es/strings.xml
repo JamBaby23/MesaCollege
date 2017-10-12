@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Escuela de Mesa</string>
+    <string name="textViewButton">Sitio Web</string>
+    <string name="textViewCall">Llama Ahora</string>
+    <string name="textViewMesa">Escuela de Mesa</string>
+</resources>

@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     return;
                 }
 
-                startActivity(callIntent);
+                //startActivity(callIntent);
             }
 
         });
